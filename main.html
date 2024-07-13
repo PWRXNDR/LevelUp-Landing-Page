@@ -46,30 +46,30 @@
                 <div class="ingredients-column">
                     <div class="ingredient">
                         <img src="media/images/genseng.jpg" alt="Ингредиент 1" class="ingredient-image">
-                        <p>Экстракт женьшеня</p>
+                        <p class="ingredient-text">Экстракт женьшеня</p>
                     </div>
                     <div class="ingredient">
                         <img src="media/images/l-arginine.jpg" alt="Ингредиент 2" class="ingredient-image">
-                        <p>L-аргинин</p>
+                        <p class="ingredient-text">L-аргинин</p>
                     </div>
                     <div class="ingredient">
                         <img src="media/images/zink.jpg" alt="Ингредиент 3" class="ingredient-image">
-                        <p>Цинк</p>
+                        <p class="ingredient-text">Цинк</p>
                     </div>
                 </div>
                 <img src="media/images/prod.png" alt="Product Image" class="product-image-center">
                 <div class="ingredients-column">
                     <div class="ingredient">
                         <img src="media/images/maki.jpg" alt="Ингредиент 4" class="ingredient-image">
-                        <p>Экстракт маки</p>
+                        <p class="ingredient-text">Экстракт маки</p>
                     </div>
                     <div class="ingredient">
                         <img src="media/images/tribulus.jpg" alt="Ингредиент 5" class="ingredient-image">
-                        <p>Трибулус террестрис</p>
+                        <p class="ingredient-text">Трибулус террестрис</p>
                     </div>
                     <div class="ingredient">
                         <img src="media/images/kordiceps.jpg" alt="Ингредиент 6" class="ingredient-image">
-                        <p>Экстракт кордицепса</p>
+                        <p class="ingredient-text">Экстракт кордицепса</p>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
     <section id="reviews" class="block">
         <div class="content">
             <div class="section-title">
-                <h2>Отзывы</h2>
+                <h2 style="font-size: 3em; color: #fff;">Отзывы</h2>
             </div>
 
             <div class="reviews-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -94,38 +94,35 @@
 
                     <div class="swiper-slide">
                         <div class="review-item">
-                            <p>
+                            <img src="media/images/person.jpg" class="review-img" alt="Отзыв 1">
+                            <h3 class="review-name">Александр</h3>
+                            <p class="review-text">
                                 Отличный продукт! Помог повысить мою выносливость и уровень энергии.
                             </p>
-                            <img src="media/images/person.jpg" class="review-img" alt="Отзыв 1">
-                            <h3>Александр</h3>
-                            <h4>Клиент</h4>
                         </div>
                     </div><!-- End review item -->
 
                     <div class="swiper-slide">
                         <div class="review-item">
-                            <p>
+                            <img src="media/images/person.png" class="review-img" alt="Отзыв 2">
+                            <h3 class="review-name">Анатолий</h3>
+                            <p class="review-text">
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                После приема LevelUp, я стала чувствовать себя намного лучше и энергичнее.
+                                После приема <b style="color: rgb(254, 234, 13)">LevelUp</b>, я стал чувствовать себя намного лучше и энергичнее.
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
-                            <img src="media/images/reviewer2.jpg" class="review-img" alt="Отзыв 2">
-                            <h3>Ирина</h3>
-                            <h4>Клиент</h4>
                         </div>
                     </div><!-- End review item -->
 
                     <div class="swiper-slide">
                         <div class="review-item">
-                            <p>
+                            <img src="media/images/reviewer3.jpg" class="review-img" alt="Отзыв 3">
+                            <h3 class="review-name">Дмитрий</h3>
+                            <p class="review-text">
                                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                                 Замечательный продукт, рекомендую всем своим друзьям!
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
-                            <img src="media/images/reviewer3.jpg" class="review-img" alt="Отзыв 3">
-                            <h3>Дмитрий</h3>
-                            <h4>Клиент</h4>
                         </div>
                     </div><!-- End review item -->
 
@@ -137,23 +134,27 @@
 
     <!-- Promo Block 2 -->
     <section id="promo2" class="block">
-        <div class="content">
-            <img src="media/images/doctor.png" alt="Person with Product">
-            <p>
-                Product description...
-            </p>
-            <ul>
-                <li>Characteristic 1</li>
-                <li>Characteristic 2</li>
-                <li>Characteristic 3</li>
-            </ul>
-            <div class="card" onclick="scrollToOrder()">
-                <div class="card-content">
-                    <p class="card-title">
-                        Заказать продукт
-                    </p>
-                    <p class="card-para">Бесплатная доставка</п>
-                </div>
+        <div class="content promo2-content">
+            <div class="promo2-image">
+                <img src="media/images/person_with_product.png" alt="Person with Product">
+            </div>
+            <div class="promo2-description">
+                <p style="font-size: 1.5em;">
+                    <b style="color: rgb(254, 234, 13)">LevelUp</b> предназначен для повышения вашей выносливости и энергии, улучшения общей производительности и качества жизни. Продукт создан с использованием натуральных ингредиентов и прошел клинические испытания.
+                </p>
+                <ul class="promo2-characteristics">
+                    <li>Увеличивает энергию</li>
+                    <li>Повышает выносливость</li>
+                    <li>Улучшает производительность</li>
+                    <li style="list-style-type: none;">
+                        <div id="promo-2-card" class="card" onclick="scrollToOrder()">
+                            <div class="card-content">
+                                <p class="card-title">Заказать продукт</p>
+                                <p class="card-para">Бесплатная доставка</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
@@ -161,19 +162,29 @@
     <!-- Order Form Block -->
     <section id="order" class="block">
         <div class="content">
-            <h1 class="Name">LevelUp</h1>
-            <div id="timer">30:00</div>
-            <img src="media/images/prod.png" alt="Product Image">
-            <p><span class="old-price">1000₽</span> <span class="new-price">500₽</span></p>
-            <form>
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" placeholder="Например, Иван Иванов" required>
-                <label for="phone">Телефон:</label>
-                <input type="text" id="phone" name="phone" placeholder="Например, 1234567890" required>
-                <button type="submit">Заказать</button>
-            </form>
+            <h1 class="name">LevelUp</h1>
+            <div class="prices">
+                <p><span class="old-price">1000₽</span> <span class="new-price">500₽</span></p>
+            </div>
+            <div class="order-container">
+                <div class="product-section">
+                    <img src="media/images/prod.png" alt="Product Image">
+                </div>
+                <div class="form-section">
+                    <p style="font-size: 1.8em; color: #fff;">До конца акции осталось:</p>
+                    <div id="timer">30:00</div>
+                    <form>
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Например, Иван Иванов" required>
+                        <label for="phone">Телефон:</label>
+                        <input type="text" id="phone" name="phone" placeholder="Например, 1234567890" required>
+                        <button type="submit">Заказать</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
+
     <script>
         var swiper = new Swiper('.reviews-slider', {
             speed: 600,
