@@ -45,7 +45,6 @@ body, html {
 }
 
 #promo {
-    background: url('background-video.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
 }
