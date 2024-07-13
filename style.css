@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,700&display=swap');
 
 body, html {
     margin: 0;
@@ -7,7 +7,7 @@ body, html {
     color: #000;
 }
 
-/* Animation */
+/* Анимация */
 :root {
     --letter-spacing-animation: 1em;
 }
@@ -32,12 +32,11 @@ body, html {
     font-style: italic;
     text-align: center;
     animation-name: focus-in-contract;
-    animation-duration: 3s;
+    animation-duration: 2.2s;
     animation-timing-function: linear;
     color: rgb(254, 234, 13);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-
 
 .block {
     padding: 50px 20px;
@@ -70,7 +69,13 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    opacity: 0;
+    transition: opacity 2s;
 }
+
+    .promo-content.fade-in {
+        opacity: 1;
+    }
 
 .product-image {
     width: 200px;
@@ -240,7 +245,7 @@ body, html {
     width: 200px;
 }
 
-/* Reviews */
+/* Отзывы */
 .reviews .reviews-slider {
     overflow: hidden;
 }
@@ -254,59 +259,58 @@ body, html {
         width: 35px;
         height: 35px;
         border-radius: 50%;
-        margin: -35px auto 10px auto; /* Centering the image */
+        margin: -35px auto 10px auto;
         position: relative;
         z-index: 2;
         border: 6px solid rgba(255, 255, 255, 0.12);
     }
 
-    .review-img {
-        border-radius: 50%;
-        width: 130px;
-        height: 130px;
-        object-fit: cover;
-    }
+.review-img {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
 
+.reviews .review-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0 5px 0;
+    color: #fff;
+    text-align: center;
+}
 
-    .reviews .review-item h3 {
-        font-size: 18px;
-        font-weight: bold;
-        margin: 0px 0 5px 0; /* Centering the text */
-        color: #fff;
-        text-align: center; /* Centering the text */
-    }
+.reviews .review-item .quote-icon-left,
+.reviews .review-item .quote-icon-right {
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 2em;
+}
 
-    .reviews .review-item .quote-icon-left,
-    .reviews .review-item .quote-icon-right {
-        color: rgba(255, 255, 255, 0.25);
-        font-size: 2em;
-    }
+.reviews .review-item .quote-icon-left {
+    display: inline-block;
+    left: -5px;
+    position: relative;
+}
 
-    .reviews .review-item .quote-icon-left {
-        display: inline-block;
-        left: -5px;
-        position: relative;
-    }
+.reviews .review-item .quote-icon-right {
+    display: inline-block;
+    right: -5px;
+    position: relative;
+    top: 10px;
+}
 
-    .reviews .review-item .quote-icon-right {
-        display: inline-block;
-        right: -5px;
-        position: relative;
-        top: 10px;
-    }
-
-    .reviews .review-item p {
-        font-style: italic;
-        margin: 0 15px 0 15px;
-        padding: 20px 20px 60px 20px;
-        background: rgba(255, 255, 255, 0.1);
-        position: relative;
-        border-radius: 6px;
-        position: relative;
-        z-index: 1;
-        text-align: center; /* Centering the text */
-        color: #fff;
-    }
+.reviews .review-item p {
+    font-style: italic;
+    margin: 0 15px 0 15px;
+    padding: 20px 20px 60px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
 
 .reviews .swiper-pagination {
     margin-top: 20px;
@@ -324,14 +328,14 @@ body, html {
         background-color: #18d26e;
     }
 
-    .review-text {
-        font-size: 1.5em;
-        color: #fff;
-    }
+.review-text {
+    font-size: 1.5em;
+    color: #fff;
+}
 
-    .review-name {
-        color: rgb(254, 234, 13)
-    }
+.review-name {
+    color: rgb(254, 234, 13);
+}
 
 #promo2 .promo2-content {
     display: flex;
@@ -373,7 +377,7 @@ body, html {
         font-size: 1.4em;
     }
 
-/* Maintain the existing card styles */
+/* Поддержка существующих стилей карточек */
 .card {
     width: 300px;
     height: 200px;

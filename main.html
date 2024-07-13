@@ -1,17 +1,32 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LevelUp</title>
+
+    <!-- Favicons -->
+    <link href="media/favicon/favicon.png" rel="icon">
+    <link href="media/favicon/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </head>
 <body>
-    <!-- Promo Block -->
+
+    <!-- Промо блок -->
     <section id="promo" class="block">
         <video autoplay muted loop id="bgVideo">
             <source src="media/video/impotence.mp4" type="video/mp4">
@@ -39,7 +54,7 @@
         </div>
     </section>
 
-    <!-- Product Composition Block -->
+    <!-- Блок состава продукта -->
     <section id="composition" class="block">
         <div class="content">
             <div class="ingredients-container">
@@ -82,7 +97,7 @@
         </div>
     </section>
 
-    <!-- Reviews Block -->
+    <!-- Блок отзывов -->
     <section id="reviews" class="block">
         <div class="content">
             <div class="section-title">
@@ -100,7 +115,7 @@
                                 Отличный продукт! Помог повысить мою выносливость и уровень энергии.
                             </p>
                         </div>
-                    </div><!-- End review item -->
+                    </div>
 
                     <div class="swiper-slide">
                         <div class="review-item">
@@ -112,7 +127,7 @@
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
                         </div>
-                    </div><!-- End review item -->
+                    </div>
 
                     <div class="swiper-slide">
                         <div class="review-item">
@@ -124,7 +139,7 @@
                                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                             </p>
                         </div>
-                    </div><!-- End review item -->
+                    </div>
 
                 </div>
                 <div class="swiper-pagination"></div>
@@ -132,7 +147,7 @@
         </div>
     </section>
 
-    <!-- Promo Block 2 -->
+    <!-- Промо блок 2 -->
     <section id="promo2" class="block">
         <div class="content promo2-content">
             <div class="promo2-image">
@@ -159,7 +174,7 @@
         </div>
     </section>
 
-    <!-- Order Form Block -->
+    <!-- Блок формы заказа -->
     <section id="order" class="block">
         <div class="content">
             <h1 class="name">LevelUp</h1>
@@ -173,18 +188,20 @@
                 <div class="form-section">
                     <p style="font-size: 1.8em; color: #fff;">До конца акции осталось:</p>
                     <div id="timer">30:00</div>
-                    <form>
+                    <form id="orderForm">
                         <label for="name">Имя:</label>
                         <input type="text" id="name" name="name" placeholder="Например, Иван Иванов" required>
                         <label for="phone">Телефон:</label>
                         <input type="text" id="phone" name="phone" placeholder="Например, 1234567890" required>
                         <button type="submit">Заказать</button>
                     </form>
+                    <p id="thankYouMessage" style="display: none; color: green;">Спасибо, мы скоро свяжемся с вами!</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Swiper JS и пользовательские скрипты -->
     <script>
         var swiper = new Swiper('.reviews-slider', {
             speed: 600,
@@ -197,6 +214,25 @@
                 el: '.swiper-pagination',
                 clickable: true
             }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const promoContent = document.querySelector('.promo-content');
+            const productCard = document.querySelector('.card');
+
+            setTimeout(() => {
+                promoContent.classList.add('fade-in');
+                productCard.classList.add('fade-in');
+            }, 1500);
+        });
+
+        const orderForm = document.getElementById('orderForm');
+        const thankYouMessage = document.getElementById('thankYouMessage');
+
+        orderForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            thankYouMessage.style.display = 'block';
+            orderForm.reset();
         });
     </script>
 </body>
