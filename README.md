@@ -26,7 +26,7 @@
     ```sh
     cd LevelUp-Landing-Page
     ```
-3. Откройте `index.html` в предпочитаемом веб-браузере для просмотра промо-страницы или перейдите по этой ссылке - https://pwrxndr.github.io/TZ---TeamLead/
+3. Откройте `index.html` в предпочитаемом веб-браузере для просмотра промо-страницы или перейдите по этой ссылке - https://pwrxndr.github.io/LevelUp-Landing-Page/
 
 ## Лицензия
 Этот проект лицензирован по лицензии MIT.
@@ -59,7 +59,7 @@ This project is a responsive landing page for the LevelUp product, showcasing it
     ```sh
     cd LevelUp-Landing-Page
     ```
-3. Open `index.html` in your preferred web browser to view the landing page or use this web link - https://pwrxndr.github.io/TZ---TeamLead/
+3. Open `index.html` in your preferred web browser to view the landing page or use this web link - https://pwrxndr.github.io/LevelUp-Landing-Page/
 
 ## License
 This project is licensed under the MIT License.
