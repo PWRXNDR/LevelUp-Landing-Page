@@ -20,7 +20,7 @@
 ## Установка
 1. Клонируйте репозиторий:
     ```sh
-    git clone https://github.com/yourusername/LevelUp-Landing-Page.git
+    git clone https://github.com/PWRXNDR/LevelUp-Landing-Page.git
     ```
 2. Перейдите в каталог проекта:
     ```sh
@@ -53,7 +53,7 @@ This project is a responsive landing page for the LevelUp product, showcasing it
 ## Setup
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/LevelUp-Landing-Page.git
+    git clone https://github.com/PWRXNDR/LevelUp-Landing-Page.git
     ```
 2. Navigate to the project directory:
     ```sh
